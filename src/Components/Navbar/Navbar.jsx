@@ -14,12 +14,11 @@ export const Navbar = () => {
                 <li>Home</li>
                 <li>Services</li>
                 <li>Experience</li>
-                <li>Portfolio</li>
-                <li>Testimonials</li>
+                <li>Technology</li>
             </ul>
         </div>
         <button className="button n-button">
-           Contact Us
+           Contact
         </button>
     </div>
    </div>

@@ -6,9 +6,9 @@ import Instagram from '../../img/instagram.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
 import RoshanWickramasooriya from '../../img/Roshan2.png'
-import thumbup from '../../img/thumbup.png'
-import Crown from '../../img/crown.png'
-import glassesimoji from '../../img/glassesimoji.png'
+import auto from '../../img/auto.png'
+import qa from '../../img/qa.png'
+import bug from '../../img/bug.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 const Intro = () => {
   return (
@@ -31,12 +31,12 @@ const Intro = () => {
             <img src={Vector1} alt="" />
             <img src={Vector2} alt="" />
             <img src={RoshanWickramasooriya} alt="" />
-            <img src={glassesimoji} alt="" />
+            <img src={bug} alt=""  style={{top: '-20%', left: '-65%', width: '180px', height: '180px'}}/>
             <div style={{top: '-4%', left: '65%'}}>
-                <FloatingDiv image={Crown} txt1='QA' txt2='Engineer'/>
+                <FloatingDiv image={qa} txt1='QA' txt2='Engineer'/>
             </div>
             <div style={{top: '18rem', left: '-5rem'}}>
-                <FloatingDiv image={thumbup} txt1='Best' txt2='Testing'/>
+                <FloatingDiv image={auto} txt1='Automation' txt2='Testing'/>
             </div>
         {/* blur divs */}
            <div className='blur' style={{background: 'rgb(238 210 255)'}}></div>
