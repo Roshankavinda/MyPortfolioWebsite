@@ -15,6 +15,7 @@ export const Navbar = () => {
                 <li>Services</li>
                 <li>Experience</li>
                 <li>Technology</li>
+                <li>Portfolio</li>
             </ul>
         </div>
         <button className="button n-button">
