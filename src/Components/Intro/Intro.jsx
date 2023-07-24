@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
 import './Intro.css'
 import Github from '../../img/github.png'
 import LinkedIn from '../../img/linkedin.png'
 import Instagram from '../../img/instagram.png'
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import RoshanWickramasooriya from '../../img/Roshan2.png'
+import RoshanWickramasooriya from '../../img/Roshan.png'
 import auto from '../../img/auto.png'
 import qa from '../../img/qa.png'
 import bug from '../../img/bug.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+
 const Intro = () => {
   return (
     <div className='intro'>
@@ -17,8 +18,11 @@ const Intro = () => {
         <div className='i-name'>
             <span>Hey! I Am</span>
             <span>Roshan Wickramasooriya</span>
-            <span>Software Quality Assurance 
-                Engineer with experience in 2 years</span>
+            <span>As a Software Quality Assurance Engineer, my mission is to play a 
+                pivotal role in the software development process by meticulously testing 
+                and validating every aspect of the product. My commitment to excellence drives 
+                me to continuously improve the quality of software, thereby contributing to a 
+                seamless user experience and the success of projects.</span>
         </div>
         <button className='button i-button'>Hire me</button>
         <div className='i-icons'>
