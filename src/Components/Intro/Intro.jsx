@@ -10,8 +10,10 @@ import auto from '../../img/auto.png'
 import qa from '../../img/qa.png'
 import bug from '../../img/bug.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import {motion} from 'framer-motion'
 
 const Intro = () => {
+    const transition = {duration : 2, type: 'spring'}
   return (
     <div className='intro'>
         <div className='i-left'>
@@ -35,13 +37,25 @@ const Intro = () => {
             <img src={Vector1} alt="" />
             <img src={Vector2} alt="" />
             <img src={RoshanWickramasooriya} alt="" />
-            <img src={bug} alt=""  style={{top: '-20%', left: '-65%', width: '180px', height: '180px'}}/>
-            <div style={{top: '-4%', left: '65%'}}>
+            <motion.img
+            initial={{left: '-70%'}}
+            whileInView={{left: '-60%'}}
+            transition={transition}
+            src={bug} alt=""  style={{top: '-20%', left: '-65%', width: '180px', height: '180px'}}/>
+            <motion.div 
+            initial={{top: '-4%', left: '69%'}}
+            whileInView={{left: '58%'}}
+            transition={transition}
+            style={{top: '-4%', left: '65%'}}>
                 <FloatingDiv image={qa} txt1='QA' txt2='Engineer'/>
-            </div>
-            <div style={{top: '18rem', left: '-5rem'}}>
+            </motion.div>
+            <motion.div 
+            initial={{top: '18rem', left: '9rem'}}
+            whileInView={{left: '-4rem'}}
+            transition={transition} 
+            style={{top: '18rem', left: '-5rem'}}>
                 <FloatingDiv image={auto} txt1='Automation' txt2='Testing'/>
-            </div>
+            </motion.div>
         {/* blur divs */}
            <div className='blur' style={{background: 'rgb(238 210 255)'}}></div>
            <div className='blur' style={{background: '#C1F5FF', top: '17rem', width: '21rem', height: '11rem', left: '-9rem'}}></div>

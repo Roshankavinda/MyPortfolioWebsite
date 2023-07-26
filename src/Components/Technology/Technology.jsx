@@ -5,6 +5,7 @@ import Java from "../../img/java.png"
 import Js from "../../img/js.png"
 import Cypress from "../../img/cypress.png"
 import Appium from "../../img/appium.png"
+import { motion } from "framer-motion";
 
 const Technology = () => {
   return (
@@ -22,7 +23,12 @@ const Technology = () => {
         <div className='blur s-blur1' style={{background: '#ABF1FF94'}}></div>
         {/* left side */}
         <div className='t-right'>
-        <div className='t-mainCircle'>
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          viewport={{ margin: "-40px" }}
+          transition={{ duration: 3.5, type: "spring" }} 
+          className='t-mainCircle'>
             <div className='t-secCircle'>
                <img src={Selenium} alt="" />
             </div>
@@ -38,7 +44,7 @@ const Technology = () => {
             <div className='t-secCircle'>
                <img src={Cypress}  alt="" />
             </div>
-        </div>
+        </motion.div>
         <div className='t-backCircle blueCircle'></div>
         <div className='t-backCircle yellowCircle'></div>
         </div>
