@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Technology = () => {
   return (
-    <div className='technology'>
+    <div className='technology'id='Technology'>
          {/* left side */}
          <div className='awesome'>
         <span>Working</span>

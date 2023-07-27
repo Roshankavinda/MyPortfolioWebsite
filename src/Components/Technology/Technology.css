@@ -2,7 +2,8 @@
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 90vh;
-    margin-top: 15rem;
+    margin-top: 20rem;
+    margin-bottom: 9rem;
 }
 
 .t-right{
@@ -86,4 +87,3 @@
     left: 53rem;
     top: -8rem;
 }
-

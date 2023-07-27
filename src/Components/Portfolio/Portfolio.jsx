@@ -9,7 +9,7 @@ import NOCU from "../../img/nocu.png";
 
 const Portfolio = () => {
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio" id="Portfolio">
       {/* heading */}
       <span>Recent Projects</span>
       <span>Portfolio</span>

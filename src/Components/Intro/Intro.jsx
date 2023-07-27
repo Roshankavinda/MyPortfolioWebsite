@@ -15,7 +15,7 @@ import {motion} from 'framer-motion'
 const Intro = () => {
     const transition = {duration : 2, type: 'spring'}
   return (
-    <div className='intro'>
+    <div className='intro' id="Home">
         <div className='i-left'>
         <div className='i-name'>
             <span>Hey! I Am</span>
@@ -46,17 +46,21 @@ const Intro = () => {
             initial={{top: '-4%', left: '69%'}}
             whileInView={{left: '58%'}}
             transition={transition}
-            style={{top: '-4%', left: '65%'}}>
+            style={{top: '-4%', left: '65%'}}
+            className="floating-div"
+            >
                 <FloatingDiv image={qa} txt1='QA' txt2='Engineer'/>
             </motion.div>
             <motion.div 
             initial={{top: '18rem', left: '9rem'}}
             whileInView={{left: '-4rem'}}
             transition={transition} 
-            style={{top: '18rem', left: '-5rem'}}>
+            style={{top: '18rem', left: '-5rem'}}
+            className="floating-div"
+           >
                 <FloatingDiv image={auto} txt1='Automation' txt2='Testing'/>
             </motion.div>
-        {/* blur divs */}
+       
            <div className='blur' style={{background: 'rgb(238 210 255)'}}></div>
            <div className='blur' style={{background: '#C1F5FF', top: '17rem', width: '21rem', height: '11rem', left: '-9rem'}}></div>
         </div>
