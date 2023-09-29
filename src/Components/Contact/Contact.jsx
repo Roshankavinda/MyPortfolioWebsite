@@ -41,10 +41,30 @@ const Contact = () => {
       
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
+          <input type="text" 
+          name="user_name" 
+          className="user"  
+          placeholder="Your Name"
+          pattern="[A-Za-z ]+"
+          maxLength="100"
+          />
+          <input 
+         type="email"
+         name="user_email"
+         className="user"
+         placeholder="Your Email"
+         maxLength="150"
+         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+         />
+          <textarea 
+          name="message" 
+          className="user"
+          placeholder="Message"
+          maxLength="500"/>
+          <input 
+          type="submit" 
+          value="Send" 
+          className="button"/>
           <span>{done && "Thanks for Contacting me"}</span>
           <div
             className="blur c-blur1"

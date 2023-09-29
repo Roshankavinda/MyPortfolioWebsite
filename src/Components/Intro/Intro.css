@@ -1,7 +1,7 @@
 .Intro {
   display: flex;
   height: 77vh;
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 
@@ -29,7 +29,7 @@
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 17px;
+  font-size: 18px;
   color: var(--gray);
   margin-top: 10px;
 }
@@ -38,7 +38,7 @@
   height: 2rem;
 }
 .i-icons {
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   gap: 0rem;
 }
@@ -60,7 +60,7 @@
 .i-right > :nth-child(1) {
   transform: scale(0.69);
   left: -15%;
-  top: -9%;
+  top: -10%;
 }
 .i-right > :nth-child(2) {
   top: -4.6rem;
@@ -96,19 +96,24 @@
 @media screen and (max-width: 480px) {
   .Intro {
     flex-direction: column;
-    gap: 7rem;
+    gap: 6rem;
     height: 64rem;
   }
-
+  .i-left {
+    transform: scale(0.8);
+    left: -2.3rem;
+    top: -10rem;
+  }
   .i-right {
     transform: scale(0.8);
     left: -3rem;
+    top: -13rem;
   }
   .i-right .blur {
     display: none;
   }
   .floating-div:nth-of-type(1){
     
-    top: -7rem !important;;
+    top: -6rem !important;;
   }
 }

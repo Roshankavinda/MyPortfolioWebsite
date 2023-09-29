@@ -11,19 +11,19 @@ const navbar = () => {
       <div className="n-right">
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
-          <Link activeClass="active" to="Home" spy={true} smooth={true}>
+          <Link activeClass="active" to="Intro" spy={true} smooth={true}>
                 <li>Home</li>
             </Link>
-            <Link activeClass="active" to="Services" spy={true} smooth={true}>
+            <Link activeClass="active" to="services" spy={true} smooth={true}>
                 <li>Services</li>
             </Link>
-            <Link activeClass="active" to="Experience" spy={true} smooth={true}>
+            <Link activeClass="active" to="experience" spy={true} smooth={true}>
                 <li>Experience</li>
             </Link>
-            <Link activeClass="active" to="Technology" spy={true} smooth={true}>
+            <Link activeClass="active" to="works" spy={true} smooth={true}>
                 <li>Technology</li>
             </Link>
-            <Link activeClass="active" to="Portfolio" spy={true} smooth={true}>
+            <Link activeClass="active" to="portfolio" spy={true} smooth={true}>
                 <li>Portfolio</li>
             </Link>
           </ul>

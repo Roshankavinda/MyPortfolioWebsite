@@ -43,8 +43,8 @@ const Services = () => {
         >
           <Card
             emoji={Testcase} 
-            heading={"Test Case Creation"}
-            detail={"One of my key strengths lies in.."}
+            heading={"Test Case Design"}
+            detail={"My test case gives detailed information about testing strategy & testing process."}
           />
         </motion.div>
         <motion.div
@@ -55,7 +55,7 @@ const Services = () => {
           <Card
             emoji={Automated}
             heading={"Automation Testing"}
-            detail={"Recognizing the need for efficient and.."}
+            detail={"I automated software testing uses scripted sequences executed by testing tools."}
             className="emoji-style"
           />
         </motion.div>
@@ -68,7 +68,7 @@ const Services = () => {
             emoji={Phone}
             heading={"Mobile Test"}
             detail={
-              "As a mobile testing specialist, I.."
+              "I delivering great experiences on mobile is uniquely challenging and rewarding."
             }
             color="rgba(252, 166, 31, 0.45)"
           />

@@ -38,9 +38,15 @@ const Intro = () => {
           <button className="button i-button">Hire me</button>
         </Link>
         <div className="i-icons">
-          <img src={Github} alt="https://github.com/Roshankavinda" />
-          <img src={LinkedIn} alt="https://www.linkedin.com/in/roshan-wickramasooriya-003b5a207/" />
-          <img src={Instagram} alt="https://www.instagram.com/roshanwickramasooriya/" />
+          <a href="https://github.com/Roshankavinda" target="_blank" rel="noopener noreferrer">
+          <img src={Github} alt=""/>
+          </a>
+          <a href="https://www.linkedin.com/in/roshan-wickramasooriya-003b5a207/" target="_blank" rel="noopener noreferrer">
+          <img src={LinkedIn} alt="" />
+          </a>
+          <a href="https://www.instagram.com/roshanwickramasooriya/" target="_blank" rel="noopener noreferrer">
+          <img src={Instagram} alt="" />
+          </a>
         </div>
       </div>
       <div className="i-right">
@@ -49,7 +55,7 @@ const Intro = () => {
         <img src={RoshanWickramasooriya} alt="" style={{marginLeft:'-15rem'}}/>
         <motion.img
           initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" , top:"-25%"}}
+          whileInView={{ left: "-20%" , top:"-29%"}}
           transition={transition}
           src={bug}
           alt=""
@@ -66,7 +72,7 @@ const Intro = () => {
 
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          whileInView={{ left: "1rem" }}
           transition={transition}
           className="floating-div"
         >
