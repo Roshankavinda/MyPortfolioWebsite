@@ -3,8 +3,8 @@
     display: flex;
     height: 80vh;
     margin-top: 4rem;
-    padding-top: 3rem;
-    margin-left: 10rem;
+ 
+  padding-top: 3rem;
 }
 
 .c-right{
@@ -41,3 +41,16 @@ textarea{
     top: 1rem;
     left: 8rem;
 }
+
+@media screen and (max-width: 480px) {
+    .contact-form{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+
+}   

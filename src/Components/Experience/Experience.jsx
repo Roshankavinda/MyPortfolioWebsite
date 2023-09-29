@@ -1,34 +1,29 @@
-import React from 'react'
-import './Experience.css'
-import {motion} from 'framer-motion'
-
+import React, { useContext } from "react";
+import { themeContext } from "../../Context";
+import "./Experience.css";
 const Experience = () => {
-  const transition = {duration : 2, type: 'spring'}
-  return (
-    <div className='experience'id='Experience'>
-    <div className='achievement'>
-        <motion.div 
-             initial={{ left: "-15rem" }}
-             whileInView={{ left: "0rem" }}
-             transition={transition} className='circle'>2+</motion.div>
-        <span>Years</span>
-        <span>Experience</span>
-    </div>
-    <div className='achievement'>
-        <div className='circle'>10+</div>
-        <span>Completed</span>
-        <span>Projects</span>
-    </div>
-    <div className='achievement'>
-        <motion.div 
-             initial={{ right: "-15rem" }}
-             whileInView={{ left: "0rem" }}
-             transition={transition}  className='circle'>6+</motion.div>
-        <span>Tools</span>
-        <span>Knowledge</span>
-    </div>
-    </div>
-  )
-}
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
-export default Experience
+  return (
+    <div className="experience" id='experience'>
+      <div className="achievement">
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>2+</div>
+        <span  style={{color: darkMode?'white':''}}>Years </span>
+        <span>Experience</span>
+      </div>
+      <div className="achievement">
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>10+</div>
+        <span  style={{color: darkMode?'white':''}}>Completed </span>
+        <span>Projects</span>
+      </div>
+      <div className="achievement">
+        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>6+</div>
+        <span  style={{color: darkMode?'white':''}}>Tools </span>
+        <span>Knowledge</span>
+      </div>
+    </div>
+  );
+};
+
+export default Experience;
