@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Services.css";
 import  Automated from "../../img/automated.png";
 import Testcase from "../../img/testcase.png"
-import Phone from "../../img/phone.png"
+import Manual from "../../img/manual.png"
 import Card from '../Card/Card';
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -65,10 +65,10 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Phone}
-            heading={"Mobile Test"}
+            emoji={Manual}
+            heading={"Manual Testing"}
             detail={
-              "I delivering great experiences on mobile is uniquely challenging and rewarding."
+              "Manual testing is a fundamental aspect of my professional background, and I have gained extensive experience in this field."
             }
             color="rgba(252, 166, 31, 0.45)"
           />
