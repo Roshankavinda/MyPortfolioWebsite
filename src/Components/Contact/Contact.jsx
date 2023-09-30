@@ -47,6 +47,7 @@ const Contact = () => {
           placeholder="Your Name"
           pattern="[A-Za-z ]+"
           maxLength="100"
+          required
           />
           <input 
          type="email"
@@ -55,12 +56,14 @@ const Contact = () => {
          placeholder="Your Email"
          maxLength="150"
          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+         required
          />
           <textarea 
           name="message" 
           className="user"
           placeholder="Message"
-          maxLength="500"/>
+          maxLength="500"
+          required/>
           <input 
           type="submit" 
           value="Send" 
