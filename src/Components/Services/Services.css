@@ -54,7 +54,8 @@
   
   @media screen and (max-width: 480px) {
     .services {
-      margin-top: -13rem;
+      margin-top: -12rem;
+      margin-bottom: 23rem;
       flex-direction: column;
       gap: 5rem;
       height: 66rem;

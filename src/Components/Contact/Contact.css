@@ -41,10 +41,36 @@ textarea{
     top: 1rem;
     left: 8rem;
 }
+.modal-content {
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    padding: 20px;
+    
+    border: 2px solid #fffdf8;
+    max-width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+    .modal-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
 
 @media screen and (max-width: 480px) {
     .contact-form{
-        padding: 0;
+        padding: 5;
         flex-direction: column;
         gap: 5rem;
         height: 40rem;

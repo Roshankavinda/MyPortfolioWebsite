@@ -8,7 +8,6 @@ import Vector2 from '../../img/Vector2.png'
 import RoshanWickramasooriya from '../../img/Roshan.png'
 import auto from '../../img/auto.png'
 import qa from '../../img/qa.png'
-import bug from '../../img/bug.png'
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -57,8 +56,6 @@ const Intro = () => {
           initial={{ left: "-36%" }}
           whileInView={{ left: "-20%" , top:"-29%"}}
           transition={transition}
-          src={bug}
-          alt=""
         />
 
         <motion.div
