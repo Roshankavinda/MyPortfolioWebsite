@@ -6,6 +6,7 @@ import NOCUWEB from "../../img/nocuweb.png";
 import IWWRMP from "../../img/iwwrmp.png";
 import NOCU from "../../img/nocu.png";
 import NPQS from "../../img/npqs.png";
+import DavidsRock from "../../img/davidsrock.png";
 
 import { themeContext } from "../../Context";
 const Portfolio = () => {
@@ -29,6 +30,9 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={NOCU} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={DavidsRock} alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={IWWRMP} alt="" />
